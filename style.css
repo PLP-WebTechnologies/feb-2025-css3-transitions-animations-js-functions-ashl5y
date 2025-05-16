@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather' serif;
+    background-color: #f5f5f5;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
+}
+
+#logo {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+.preferences {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.preferences h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+.preferences h2 {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    color: #555;
+}
+
+.preferences select {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+}
+
+.preferences select:focus {
+    border-color: #333;
+    outline: none;
+}
+
+.animation-section {
+    background-color: #fff;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+}
+
+.animation-section h2 {
+    margin-bottom: 1rem;
+}
+
+.animation-section p {
+    margin-bottom: 1rem;
+}
+
+.btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+.pulse {
+    animation: pulse 0.4s ease;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.spin {
+    animation: spinGrow 1s ease forwards;
+}
+
+@keyframes spinGrow {
+    0% { transform: rotate(0deg) scale(1); }
+    100% { transform: rotate(360deg) scale(1.2); }
+}
+
+.theme-scarlet {
+    background-color: #ff2400;
+    color: white;
+}
+
+.theme-aqua {
+    background-color: #00ffff;
+    color: #000;
+}
+
+.theme-lilac {
+    background-color: #c8a2c8;
+    color: #000;
+}
+
