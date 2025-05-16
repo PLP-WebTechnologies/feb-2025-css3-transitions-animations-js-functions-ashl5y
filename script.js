@@ -65,14 +65,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Event listener for theme selector
     themeSelector.addEventListener('change', (event) => {
         const selectedTheme = event.target.value;
         storeThemePreference(selectedTheme);
         applyTheme(selectedTheme);
     });
 
-    // On page load, retrieve and apply stored theme
     const savedTheme = retrieveThemePreference();
     if (savedTheme) {
         applyTheme(savedTheme);
